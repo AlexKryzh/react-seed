@@ -1,0 +1,33 @@
+{
+  "name": "react-seed",
+  "version": "1.0.0",
+  "description": "React Seed Test Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexKryzh/react-seed.git"
+  },
+  "keywords": [
+    "react",
+    "gulp"
+  ],
+  "author": "Alex Kryzhanovskyy",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": "~4.2.x"
+  },
+  "bugs": {
+    "url": "https://github.com/AlexKryzh/react-seed/issues"
+  },
+  "homepage": "https://github.com/AlexKryzh/react-seed#readme",
+  "devDependencies": {
+    "babel-core": "^6.10.4",
+    "babel-preset-es2015": "^6.9.0",
+    "gulp": "^3.9.1",
+    "gulp-cachebust": "0.0.6",
+    "gulp-task-listing": "^1.0.1"
+  }
+}
