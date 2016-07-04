@@ -7,6 +7,12 @@ gulp.task('dev', function(cb) {
 
     runSequence(
         [
+            'clean:Build'
+        ],
+        [
+            'browserify:Scripts'
+        ],
+        [
             'copy:MainIndex'
         ],
         [

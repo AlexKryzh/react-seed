@@ -15,22 +15,33 @@
     "gulp"
   ],
   "author": "Alex Kryzhanovskyy",
-  "license": "UNLICENSED",
+  "private": true,
   "engines": {
-    "node": "~4.2.x"
+    "node": ">=5.0 <7",
+    "npm": ">=3.3 <4"
   },
   "bugs": {
     "url": "https://github.com/AlexKryzh/react-seed/issues"
   },
   "homepage": "https://github.com/AlexKryzh/react-seed#readme",
+  "dependencies": {
+    "envify": "^3.4.1",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
+    "react-router-component": "^0.35.0"
+  },
   "devDependencies": {
     "babel-core": "^6.10.4",
     "babel-preset-es2015": "^6.9.0",
     "browser-sync": "^2.13.0",
     "gulp": "^3.9.1",
+    "gulp-browserify": "^0.5.1",
     "gulp-cachebust": "0.0.6",
+    "gulp-clean": "^0.3.2",
+    "gulp-sass": "^2.3.2",
     "gulp-task-listing": "^1.0.1",
     "gulp-util": "^3.0.7",
+    "reactify": "^1.1.1",
     "run-sequence": "^1.2.2"
   },
   "babel": {

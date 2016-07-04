@@ -4,10 +4,10 @@ export default {
         name: 'React Seed'
     },
 
-    browserPort: 3000,
-    UIPort: 3001,
+    browserPort: 3005,
+    UIPort: 3006,
 
-    sourceDir: './app/',
+    sourceDir: './src/',
     buildDir: './build/',
 
     assetExtensions: [
@@ -27,7 +27,12 @@ export default {
     ],
 
     templates: {
-        main: 'app/index.html'
+        main: 'src/index.html'
+    },
+
+    scripts: {
+        src: ['src/scripts/app.js'],
+        build: './build/scripts/'
     },
 
     init: function() {
