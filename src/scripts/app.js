@@ -1,5 +1,5 @@
-var React    = window.React = require('react'), // assign it to winow for react chrome extension
-    ReactDOM    = window.ReactDOM = require('react-dom'),
+var React  = require('react'),
+    ReactDOM = require('react-dom'),
     Header   = require('./header'),
     Content  = require('./router'),
     App;

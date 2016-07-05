@@ -1,5 +1,5 @@
-import config    from '../config';
-import gulp       from 'gulp';
+import config               from '../config';
+import gulp                  from 'gulp';
 
 gulp.task('watch:Files', ['server'], function() {
 
@@ -7,5 +7,7 @@ gulp.task('watch:Files', ['server'], function() {
 
     gulp.watch([config.templates.main], ['copy:MainIndex']);
     gulp.watch([config.scripts.src], ['browserify:Scripts']);
+
+    gulp.watch('./dist/**/*').on('change', global.browserSync.reload);
 
 });

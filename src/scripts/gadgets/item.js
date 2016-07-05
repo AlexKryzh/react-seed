@@ -1,4 +1,3 @@
-/** @jsx React.DOM */
 var React = require('react'),
     Footer,
     Item;
@@ -7,7 +6,7 @@ Footer = React.createClass({
     render: function () {
         var gadget = this.props.gadget;
         return <p>
-            <a href="{gadget.url}" target="_blank">{gadget.url}</a>
+            <a href={gadget.url} target="_blank">{gadget.url}</a>
         </p>;
     }
 });

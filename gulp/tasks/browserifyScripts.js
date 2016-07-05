@@ -4,7 +4,7 @@ import clean              from 'gulp-clean';
 import browserify      from 'gulp-browserify';
 
 gulp.task('browserify:Scripts', function () {
-    gulp.src(config.scripts.src)
+    gulp.src(config.scripts.src_app)
       .pipe(browserify({
           debug: true,
           transform: [ 'reactify' ]
