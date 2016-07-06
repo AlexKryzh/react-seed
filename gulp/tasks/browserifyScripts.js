@@ -1,13 +1,12 @@
 import config             from '../config';
 import gulp                from 'gulp';
-import clean              from 'gulp-clean';
-import browserify      from 'gulp-browserify';
+import browserify      from 'browserify';
 
 gulp.task('browserify:Scripts', function () {
-    gulp.src(config.scripts.src_app)
+    gulp.src(config.scripts.src)
       .pipe(browserify({
           debug: true,
           transform: [ 'reactify' ]
       }))
-      .pipe(gulp.dest(config.scripts.build));
+      .pipe(gulp.dest(config.scripts.dest));
 });

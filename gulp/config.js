@@ -7,8 +7,9 @@ export default {
     browserPort: 3005,
     UIPort: 3006,
 
-    sourceDir: './src/',
-    buildDir: './dist/',
+    src: './src/',
+    dest: './dist/',
+    destFiles: './dist/**/*',
 
     assetExtensions: [
         'js',
@@ -31,9 +32,9 @@ export default {
     },
 
     scripts: {
-        src: ['src/scripts/**/*.js'],
-        src_app: ['src/scripts/app.js'],
-        build: './dist/scripts/'
+        src: ['src/typescripts/app.ts'],
+        srcs: ['src/scripts/**/*.js'],
+        dest: 'dist/scripts'
     },
 
     init: function() {

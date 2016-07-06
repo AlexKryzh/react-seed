@@ -3,6 +3,6 @@ import gulp         from 'gulp';
 import clean       from 'gulp-clean';
 
 gulp.task('clean:Build', function() {
-    return gulp.src( config.buildDir, {read: false})
+    return gulp.src( config.dest, {read: false})
         .pipe(clean());
 });

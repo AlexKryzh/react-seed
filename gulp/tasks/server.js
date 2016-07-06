@@ -9,7 +9,7 @@ gulp.task('server', function() {
 
     global.browserSync.init({
         server: {
-            baseDir: config.buildDir,
+            baseDir: config.dest,
             middleware: function(req, res, next) {
                 let fileHref = url.parse(req.url).href;
 

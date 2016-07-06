@@ -1,0 +1,10 @@
+{
+    "files": [
+        "src/typescripts/app.ts",
+        "src/typescripts/modules/greet.ts"
+    ],
+    "compilerOptions": { 
+        "sourceMap": true, 
+        "target": "es5"
+    }
+}
