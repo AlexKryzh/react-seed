@@ -10,7 +10,7 @@ gulp.task('dev', function(cb) {
             'clean:Build'
         ],
         [
-            'browserify:Typescripts'
+            'build:App'
         ],
         [
             'copy:MainIndex'

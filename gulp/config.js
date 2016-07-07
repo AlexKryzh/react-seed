@@ -32,8 +32,8 @@ export default {
     },
 
     scripts: {
-        src: ['src/typescripts/app.ts'],
-        srcs: ['src/scripts/**/*.js'],
+        src: ['src/scripts/app.tsx'],
+        srcs: ['src/scripts/**/*'],
         dest: 'dist/scripts'
     },
 
